@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.env
+.DS_Store
+
+# accidental nested duplicate copy
+campusfind--main/
+
+# runtime logs
+*.log
+
+# test artifacts
+backend/test-pixel.png

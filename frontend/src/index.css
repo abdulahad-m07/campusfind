@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Absans';
+  src: url('/fonts/Absans-Regular.woff2') format('woff2'),
+       url('/fonts/Absans-Regular.woff') format('woff'),
+       url('/fonts/Absans-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-danger: #dc2626;
+  --color-danger-hover: #b91c1c;
+  --color-success: #16a34a;
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-text-light: #64748b;
+  --color-border: #e2e8f0;
+  --color-lost: #fee2e2;
+  --color-lost-text: #991b1b;
+  --color-found: #dcfce7;
+  --color-found-text: #166534;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+:root.dark {
+  --color-primary: #fb923c;
+  --color-primary-hover: #f97316;
+  --color-danger: #f87171;
+  --color-danger-hover: #ef4444;
+  --color-success: #4ade80;
+  --color-bg: #000000;
+  --color-surface: #121212;
+  --color-text: #ffffff;
+  --color-text-light: #d4d4d8;
+  --color-border: #2b2b2b;
+  --color-lost: #3b1010;
+  --color-lost-text: #fca5a5;
+  --color-found: #0f3d1f;
+  --color-found-text: #86efac;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+body {
+  font-family: 'Absans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
